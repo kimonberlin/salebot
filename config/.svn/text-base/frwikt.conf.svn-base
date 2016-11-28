@@ -1,0 +1,55 @@
+LANG = 'fr'
+
+# Wiki
+wiki_user = 'Salebot'
+# wiki_pass is in .config
+wiki_base = 'fr.wiktionary.org'
+wiki_prefix = 'wikt:fr'
+wiki_config_page = 'Utilisateur:Salebot/Config'
+wiki_blank_page = 'Utilisateur:Salebot/Blanchiment'
+wiki_test_page = 'Utilisateur:Salebot/Test'
+wiki_sandbox_page = 'Wikipédia:Bac à sable'
+api_url = 'http://fr.wiktionary.org/w/api.php'
+
+# IRC
+reader_server = 'irc.wikimedia.org'
+control_server = 'irc.freenode.net'
+irc_port = '6667'
+bot_nick = 'salebot-frwikt'
+
+bot_username = 'gribeco'
+# bot_pass is in .config
+bot_ircname = 'See http://fr.wiktionary.org/wiki/User:Salebot'
+
+# Reader channel (wikimedia)
+reader_channel = '#fr.wiktionary'
+
+# Control channel (freenode)
+control_channel = '#salebot-frwikt'
+
+# Database
+user_table = 'frwikt_user'
+revert_table = 'frwikt_reverts'
+revision_table = 'frwikt_revision'
+page_table = 'frwikt_page'
+
+# Bot behavior
+test_mode = '0'
+enable_reverts = '0'
+enable_notices = '0'
+enable_delete_notices = '1'
+enable_logging = '0'
+logging_to_file = '1'
+logging_to_wiki = '1'
+replace_style = 'blank'
+user_talk_style = 'bottom'
+enable_regex_update = '1'
+reset_interval = '3600'
+lag_interval = '60'
+report_threshold = '5'
+display_deletes = '0'
+no_report_threshold = '200'
+revert_threshold = '-20'
+
+# Test
+test_accent = 'é'

@@ -1,0 +1,600 @@
+<pre>
+#
+# Lexicon used by Salebot
+#
+
+key=lang
+en=english
+fr=français
+pt=português
+
+# <bot_online> is displayed on IRC after the bot joins the channel
+key=bot_online
+en=online, %s users in database
+fr=en ligne, %s utilisateurs dans la base de données
+pt=online, %s de usuários na base de dados
+
+# <log_suppage> is where the bot logs revert details
+key=log_subpage
+fr=Journal
+pt=Jornal
+
+# <suspicious_log_subpage> is where the bot logs suspicious edits (death notices for now)
+key=suspicious_log_subpage
+en=Suspicious edits
+fr=Modifications suspectes
+pt=Modificações suspeitas
+
+# <suspicious_rollback> is an alert sent to IRC when a newbie or IP reverts
+# someone else
+key=suspicious_rollback
+en=suspicious_rollback
+fr=annulation suspecte
+pt=reversão suspeita
+
+key=suspicious_rename
+en=suspicious rename
+fr=renommage suspect
+pt=movimento suspeito
+
+key=revert
+fr=révocation
+pt=reversão
+
+# <cannot_revert> is sent on IRC when the bot cannot revert a change that
+# should be reverted, because of a rule (e.g. 1RR)
+key=cannot_revert
+fr=révocation impossible
+pt=reversão impossível
+
+key=reverts_disabled
+fr=révocations désactivées
+pt=reversões desactivadas
+
+# <revert_failed> is sent when the bot tried to revert, but did not succeed
+key=revert_failed
+en=revert failed
+fr=la révocation a échoué
+pt=a reversão falhou
+
+key=blank_failed
+en=blanking failed
+fr=le blanchiment a échoué
+pt=a eliminação rápida falhou
+
+key=blank
+fr=blanchiment
+pt=eliminação rápida
+
+key=bot_blank
+fr=bot : blanchiment
+pt=bot: eliminação rápida
+
+key=unknown
+fr=inconnu
+pt=desconhecido
+
+key=block
+fr=blocage
+pt=bloqueio
+
+key=unblock
+en=unblock
+fr=déblocage
+pt=desbloqueio
+
+key=reblock
+en=reblock
+fr=reblocage
+pt=rebloqueio
+
+key=restore
+en=restore
+fr=restauration
+
+key=error
+fr=erreur
+pt=erro
+
+key=death
+en=death
+fr=mort
+pt=morte
+
+key=potential_death
+en=death ?
+fr=mort ?
+pt=morte?
+
+key=blank_summary
+fr=Résumé automatique : blanchiment
+pt=Resumo automático: eliminação rápida
+
+key=replace_summary
+fr=Résumé automatique : contenu remplacé par
+pt=Resumo automático: conteúdo substituído por
+
+# replace_message is used by the bot in its explanations
+key=replace_message
+en=contents replaced
+fr=remplacement de contenu
+pt=substituição do conteúdo
+
+key=new_page_summary
+fr=Nouvelle page :
+pt=Nova página:
+
+key=new_page_without_summary_message
+en=new page without summary
+fr=nouvelle page sans résumé
+pt=nova página sem resumo
+
+key=personal_attack
+en=personal attack
+fr=attaque personnelle
+pt=ataque pessoal 
+
+key=user_prefix
+en=User
+fr=Utilisateur
+pt=Usuário
+
+# For the various namespaces, the wording must be exactly what the wiki uses (including upper
+# case for the first letters when appropriate).
+# Eventually, the bot will read this directly from the right Mediawiki: page
+key=user_namespace
+fr=Utilisateur
+pt=Usuário
+
+key=user_talk_namespace
+fr=Discussion utilisateur
+pt=Usuário Discussão
+
+key=category_namespace
+fr=Catégorie
+pt=Categoria
+
+key=file_namespace
+fr=Fichier
+pt=Ficheiro
+
+key=image_namespace
+fr=Image
+pt=Imagem
+
+key=template_namespace
+fr=Modèle
+pt=Predefinição
+
+# <truncated> is displayed at the end of a long revert log that was truncated
+key=truncated
+en=truncated
+fr=message tronqué
+pt=mansagem truncada
+
+# <user_namespace_edit> is displayed on IRC when the bot reports a user page
+# edit by another user
+key=user_namespace_edit
+en=user page
+fr=page utilisateur
+pt=página usuário
+
+# <bot_rv_of> is displayed at the start of a revert message
+key=bot_rv_of
+en=bot: revert of %s
+fr=bot : révocation de %s
+pt=bot: revertidas edições de %s 
+
+# <log_entry_title> is used when the bot adds an entry to the wiki log
+key=log_entry_title
+en=revert of [[Special:Contributions/%s|%s]] on [[%s]]
+fr=Révocation de [[special:Contributions/%s|%s]] sur [[%s]]
+pt=reversão de [[Special:Contributions/%s|%s]] em [[%s]]
+
+# <log_summary> is the edit summary used by the bot when adding a log entry
+key=log_summary
+en=bot: added log entry for revert on
+fr=bot : ajout au journal détaillé de la révocation sur
+pt=bot: registro de log adicionado por reversão em
+
+key=hidden_box_header
+fr={{Boîte déroulante début|titre=détails}}
+pt={{Oculto|Detailed log}}
+# "Detailed log" not translated in pt 
+
+key=hidden_box_footer
+fr={{Boîte déroulante fin}}
+pt=<br/>
+# No footer on pt.
+
+key=content_detection
+en=Content detection
+fr=Détection du contenu
+pt=Detecção do conteúdo
+
+key=score_summary
+en=Final score: vandalism = %s, mistakes = %s
+fr=Score final: vandalisme = %s, erreurs = %s
+pt=Pontuação final: vandalismo = %s, erros = %s
+
+key=revision
+en=revision
+fr=version
+
+key=rv_to
+en=return to revision %s by
+fr=retour à la version %s de
+pt=para a edição %s de 
+
+key=vandalism_banner
+fr=Utilisateur:Salebot/Bandeau vandalisme
+pt=Usuário:Salebot/Aviso vandalismo
+
+key=mistake_banner
+fr=Utilisateur:Salebot/Bandeau erreur
+pt=Usuário:Salebot/Aviso erro
+
+key=recreate_banner
+fr=Utilisateur:Salebot/Bandeau re-création
+pt=Usuário:Salebot/Aviso recriação
+
+key=delete_banner
+fr=Utilisateur:Salebot/Bandeau suppression
+
+key=welcome_ip_banner
+fr=Bonjour IP
+
+key=delete_notify
+en=Page deletion notification
+fr=Annonce de suppression de page
+
+key=delete_notice_summary
+en=Page deletion notification
+fr=Annonce de suppression de page
+
+key=revert_notice_summary
+en=bot: notification of revert on
+fr=bot : annonce de révocation sur
+pt=bot: notificação de reversão em
+
+key=newuser
+fr=nouvel utilisateur
+pt=novo usuário
+
+key=move
+fr=renommage
+pt=movimento
+
+key=move_redir
+fr=redirection
+pt=redirect
+
+key=protect
+fr=protection
+pt=protecção
+
+key=unprotect
+fr=déprotection
+pt=desprotecção
+
+key=import
+fr=importation
+pt=importação
+
+key=upload
+fr=téléchargement
+pt=upload
+
+key=overwrite
+fr=écrasement
+pt=overwrite
+
+key=patrol
+en=patrol
+fr=vérification
+pt=vigiar 
+
+key=delete
+fr=suppression
+pt=eliminação
+
+key=rollback
+fr=révocation
+pt=reversão
+
+key=bot_rollback
+en=bot: rollback
+fr=bot : révocation
+pt=bot: reversão
+
+# multiple_reverts: user was reverted many times recently
+key=multiple_reverts
+fr=révocations multiples
+pt=múltiplas reversões
+
+key=multiple_edits
+fr=Nombreuses modifications
+pt=Múltiplas modificações 
+
+key=multiple_edits_cont
+en=%s %s pages, last: %s
+fr=%s %s pages, dernière : %s
+pt=%s %s páginas, última: %s
+
+key=multiple_renames
+en=multitple renames
+fr=nombreux renommages
+pt=múltiplas renomeações
+
+key=total
+fr=total
+pt=total
+
+key=humans
+fr=humains
+pt=humanos
+
+key=detection_error
+en=detection error
+fr=erreur de détection
+pt=erro de detecção
+
+key=content_message
+fr=Analyse du contenu (vandalisme, spam, erreurs, mort)
+pt=Conteúdo da mensagem (vandalismo, spam, erros)
+
+key=small_delta_long
+en=small size difference: new vandalism threshold
+fr=Petite différence de taille : nouveau seuil de vandalisme
+pt=Pequena diferença de tamanho: novo limiar de vandalismo
+
+key=small_delta
+en=small size difference
+fr=Petite différence de taille
+pt=Pequena diferença de tamanho
+
+key=ignore
+en=ignored action
+fr=action ignorée
+pt=acção ignorada
+
+key=previous_human_revert_long
+en=Previous revert by humans: new score = %s, new threshold = %s
+fr=Révocation précédente par des humains : nouveau score = %s, nouveau seuil = %s
+pt=Reversão anterior feita por humanos: novo score = %s, novo limiar = %s
+
+key=previous_human_revert
+en=Previous revert by humans
+fr=Révocation précédente par des humains
+pt=Reversão anterior feita por humanos
+
+key=user_page_edit
+en=User page, new vandalism threshold
+fr=Page utilisateur, nouveau seuil de vandalisme
+pt=Página de usuário, novo limiar de vandalismo
+
+# Note: reason is substed in handle_revert_candidate()
+key=replace_template
+fr={{Suppression Immédiate|reason|~~~}}
+pt={{Usuário:Salebot/Impróprio|~~~~}}
+
+# This message is sent to IRC when the bots reports a new page
+key=new
+en=new page
+fr=nouvelle page
+pt=página nova
+
+# create/create2 now used on user creation (by IP, by user)
+key=create
+#fr=création
+#pt=criação
+fr=nouvel utilisateur
+pt=novo utilizador
+
+key=create2
+en=secondary account creation
+fr=création de compte secondaire
+
+key=create2_message
+en=created new account User:
+fr=(a créé le nouveau compte|created new account) Utilisateur:
+pt=created new account Usuário:
+
+key=event
+en=event
+fr=événement
+pt=evento
+
+key=revert_title
+en=Your edit on [[%s]] has been reverted
+fr=Salebot a annulé votre modification sur [[%s]]
+pt=Sua edição em [[%s]] foi revertida
+
+key=large_add
+en=large add
+fr=gros ajout
+pt=grande adição
+
+# A large amount of text was deleted
+key=large_delete
+en=large delete
+fr=grosse suppression
+pt=grande supressão
+
+key=short_new_page
+en=short new page
+fr=nouvelle page courte
+pt=nova página curta
+
+key=previous_total
+en=previous total
+fr=total précédent
+pt=total anterior
+
+key=new_total
+en=new total
+fr=nouveau total
+pt=novo total
+
+key=edit
+fr=modification
+pt=edição
+
+key=of
+en=of %s
+fr=de %s
+pt=de %s
+
+key=by_of
+en=by %s of %s
+fr=par %s de %s
+pt=por %s de %s
+
+key=by_on
+en=by %s on %s
+fr=par %s sur %s
+pt=por %s em %s
+
+# $1: user, $2: reverted user, $3:page
+key=by_of_on
+en=by %s of %s on %s
+fr=par %s de %s sur %s
+pt=por %s de %s em %s
+
+key=of_on
+en=of %s on %s
+fr=de %s sur %s
+pt=de %s em %s
+
+key=newbie
+fr=débutant
+pt=novato
+
+key=watched
+en=watched
+fr=utilisateur suivi
+pt=usuário vigiado
+
+key=vandalism
+fr=vandalisme
+pt=vandalismo
+
+key=possible_vandalism
+en=possible vandalism
+fr=modification suspecte
+pt=modificação suspeita
+
+key=systematic_revert
+en=systematic revert
+fr=révocation systématique
+pt=reversão sistemática
+
+key=defense_message
+en=Vandalism on a page defended by the bot: systematic revert mode enabled
+fr=Vandalisme sur une page défendue par le bot : passage en mode révocation systématique
+pt=Vandalismo em uma página defendida pelo robô: modo reversão sistemática ativado
+
+key=systematic_revert_cont
+en=of %s expiration: %s (!unblock to cancel)
+fr=de %s expiration : %s (!unblock pour annuler)
+pt=de %s expiração: %s (!unblock para anular)
+
+# <all_edits_reverted> is added to the user talk page after a systematic revert
+key=all_edits_reverted
+en=Warning: all your edits are systematically reverted by the bot.
+fr={{subst:Utilisateur:Salebot/Révocation systématique}}
+pt=Atenção: todas as suas edições são sistematicamente revertidas pelo bot.
+
+# This message is sent to IRC when the bot detects a regex list change ->> it changed!
+key=regex_update
+fr=mise à jour de la liste des regex
+pt=actualização da lista regex
+
+key=block_message
+fr=\[\[\x03\x30\x37Spécial:(Log|Journal)/block\x03\x31\x34\]\]\x03\x34
+pt=\[\[\x03\x30\x37.?Especial:Log/block\x03\x31\x34\]\]\x03\x34
+
+key=block_message_14
+pt=bloqueou "(.+?)"
+# 2009/08/30 10:45:42 15272 DEBUG dump_fields: 1: [[  2: Especial:Log/block  3: ]]  4: block  8: *  10: AndrÃ© Teixeira Lima  12: *  14: bloqueou "UsuÃ¡rio:200.216.143.231" (apenas usuÃ¡rios anÃ³nimos, criaÃ§Ã£o de conta desabilitada, impossibilitado de editar a prÃ³pria pÃ¡gina de discussÃ£o). O bloqueio expira em 6 horas.: CriaÃ§Ã£o / inserÃ§Ã£o de texto sem sentido: Vandalismo  
+
+key=blocked_user_message
+fr=\[\[\x{03}02Utilisateur:(.+?)\x{03}10\]\]
+pt=\x{03}02Usuário:(.+?)\x{03}10
+
+key=move_message
+fr=\[\[\x03\x30\x37Spécial:(Log|Journal)/move\x03\x31\x34\]\]\x03\x34
+pt=\[\[\x03\x30\x37.*Especial:Log/move\x03\x31\x34\]\]\x03\x34
+
+key=move_from_to_message
+fr=\]\] (?:en|vers|to) \[\[(.+?)\]\]
+pt=\]\] (?:para|to) \[\[(.+?)\]\]
+
+key=delete_message
+fr=\[\[\x03\x30\x37Spécial:(Log|Journal)/delete\x03\x31\x34\]\]\x03\x34 delete
+pt=\[\[\x03\x30\x37.?Especial:Log/delete\x03\x31\x34\]\]\x03\x34 delete
+
+key=delete_page_message
+en=\[\[\x03\x30\x32(.+)\x03\x31\x30\]\]
+fr=\[\[\x03\x30\x32(.+)\x03\x31\x30\]\]
+#pt=\x03\x30\x32(.+)\x03\x31\x30
+#pt="\x03\x30\x32(.+)\x03\x31\x30":
+pt=\x03\x31\x{30}apagou "(.+)":
+
+key=unblock_user_field
+fr=« Utilisateur:(.+) »
+pt=« Usuário:(.+) »
+
+key=newuser_message
+#fr=\[\[\x03\x30\x{37}Spécial:Log/newusers\x03\x31\x34\]\]\x03\x34
+fr=\x03\x31\x{30}Nouvel utilisateur\x03
+pt=Especial:(Log|Jornal)/newusers\x03\x31\x34\]\]\x03\x34
+
+key=revert_message
+fr=Révocation des modifications de \[\[Special:Contributions/(.+?)\|.+?\]\] \(retour à la dernière version de .+?\]\]\)
+pt=Revertidas edições de \[\[Special:Contributions/(.+)\|.+\]\], para a última versão de \[\[Special:Contributions/.+\|.+\]\]
+
+key=undo_message
+fr=Annulation (?:du vandalisme|des modifications|des modifs) (?:\d+ )?(?:de|par)?\s*\[\[Spécial:Contributions/(.+?)\|.+?\]\]
+pt=Desfeita a edição \d+ de.+\[\[Especial:Contributions/(.+?)\|contribs\]\]
+
+key=bot_mistake
+en=bot mistake
+fr=bavure du bot
+pt=equívoco do bot
+
+key=edit_recently_deleted
+en=edit of a recently-deleted page
+fr=modification d'une page récemment supprimée
+pt=modificação de uma página recentemente eliminada
+
+key=interwiki
+en=interwiki
+fr=interwiki
+pt=interwiki
+
+key=thank_message
+en=thanked
+fr=a remercié
+
+key=thank
+en=thank
+fr=remerciement
+
+#key=helpful
+#en=helpful
+#fr=utile
+#
+#key=unhelpful
+#en=unhelpful
+#fr=inutile
+#
+#key=undo-helpful
+#en=undo of helpful
+#fr=annulation d'utile
+#
+#key=noaction
+#en=no action
+#fr=pas d'action
+</pre>
+

@@ -1,0 +1,68 @@
+LANG = 'fr'
+
+# Wiki
+wiki_user = 'Salebot'
+# wiki_pass is in .config
+wiki_base = 'fr.wikipedia.org'
+wiki_prefix = 'fr'
+wiki_config_page = 'Utilisateur:Salebot/Config'
+wiki_blank_page = 'Utilisateur:Salebot/Blanchiment'
+wiki_test_page = 'Utilisateur:Salebot/Test'
+wiki_ignore_pages = 'Wikipédia:Bac à sable,Wikipédia:AbuseFilter/Tests,Wikipédia:Oracle,Utilisateur:Adry1991'
+wiki_tutor_page = 'Projet:Aide et accueil/Signatures';
+api_url = 'http://fr.wikipedia.org/w/api.php'
+
+# IRC
+reader_server = 'irc.wikimedia.org'
+control_server = 'irc.freenode.net'
+irc_port = '6667'
+bot_nick = 'salebot2'
+
+bot_username = 'gribeco'
+# bot_pass is in .config
+bot_ircname = 'See http://fr.wikipedia.org/wiki/User:Salebot'
+
+# Reader channel (wikimedia)
+reader_channel = '#fr.wikipedia'
+
+# Control channel (freenode)
+control_channel = '##salebot2'
+
+# Database
+user_table = 'frwiki_user'
+revert_table = 'frwiki_reverts'
+revision_table = 'frwiki_revision'
+page_table = 'frwiki_page'
+
+# Dirs
+cache_dir = '/var/local/salebot/cache'
+log_dir = 'log'
+log_file = 'salebot2.log'
+log_conf_file = 'config/log.conf'
+lexicon_file = 'config/lexicon.txt'
+stat_file = 'config/stat'
+
+# Bot behavior
+# test_mode ignores everything except wiki_test_page
+test_mode = '0'
+enable_reverts = '0'
+enable_notices = '0'
+enable_delete_notices = '0'
+enable_logging = '1'
+logging_to_file = '1'
+logging_to_wiki = '0'
+#replace_style = 'blank'
+replace_style = 'add_template'
+user_talk_style = 'bottom'
+enable_regex_update = '1'
+reset_interval = '3600'
+lag_interval = '60'
+report_threshold = '5'
+display_deletes = '0'
+no_report_threshold = '200'
+revert_threshold = '-20'
+enable_tutors = '0'
+enable_welcome_ip = '0'
+
+# Test
+test_accent = 'é'

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Run with nohup so it keeps running after logging out
+#PERL5LIB=/home/gribeco/lib/perl5
+#export PERL5LIB
+echo $$ > .pid
+while true
+do
+  ./salebot2.pl
+  sleep 10
+done
