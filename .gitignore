@@ -1,0 +1,5 @@
+.config
+.pid
+log
+nohup.out
+regex-vandalism
