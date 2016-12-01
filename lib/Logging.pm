@@ -25,6 +25,8 @@ sub log_init
     mkdir "$log_dir/report" unless ( -d "$log_dir/report" );
 
     # Rename log if it's too big
+    if ( -f "$log_dir/$log_file" )
+{
     if ( ( -s "$log_dir/$log_file" ) > 10000000 )
     {
         my $timestamp = WikiTime(time);
@@ -32,6 +34,7 @@ sub log_init
         my $ok = rename "$log_dir/$log_file", "$log_dir/log.$timestamp";
         die "archiving failed: $ok" unless ($ok);
     }
+}
 
     # Start logger
     Log::Log4perl->init($log_conf_file);

@@ -475,7 +475,7 @@ sub add_log_entry
 sub add_log_entry_to_file
 {
     my ( $rc, $detection_log ) = @_;
-    my $filename = "log/$rc->{newid}";    # $rc->{page_name}";
+    my $filename = "$config->{log_dir}/$rc->{newid}";    # $rc->{page_name}";
     $log->debug("Writing detection log to $filename");
     open FLOG, ">$filename" or $log->error("add_log_entry_to_file: can't create $filename: $!");
     binmode FLOG, ":utf8";

@@ -96,9 +96,9 @@ sub run_vandalism
     unless defined($page_name);
     $log->debug("diff_url = $diff_url") if $debug;
 
+    $log->debug("reporting to \'$report_file\'");
     open( FV, ">$report_file" ) or $log->logdie("can't create $report_file: $!");
     binmode FV, ":utf8";
-    $log->debug("reporting to $report_file");
 
     #
     # Check diff and report
@@ -107,6 +107,7 @@ sub run_vandalism
     print FV "_CONTENT_ $score->{vandalism}, $score->{spam}, $score->{mistake}, $score->{death}\n";
     print FV "_IGNORE_1RR_\n" if $trigger_ignore_1RR;
     close FV;
+    $log->debug("reporting to $report_file complete");
 }
 
 sub get_log_section

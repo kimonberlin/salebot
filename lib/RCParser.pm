@@ -18,7 +18,7 @@ our %created_by;
 my %act;
 my $g_missed_undo;
 my $log_all_rc = 0;
-my $log_rc_file = "log/rc.log";
+my $log_rc_file = "$config->{log_dir}/rc.log";
 
 #----------------------------------------------------------------------------
 #
