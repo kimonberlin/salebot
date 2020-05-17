@@ -620,11 +620,13 @@ sub child_handler
 
     userdb_disconnect();
 
-    #if (time - $start_time >= 10)
-    #{
-        $log->debug("child_handler: child stopping");
-    #}
-    #send_irc_message ("end child_handler, pid=$$\n");
+    my $delta_time = time - $start_time;
+    if ($delta_time >= 30)
+    {
+        $log->debug("child_handler: long-running process, $delta_time seconds");
+    }
+    $log->debug("child_handler: child stopping");
+	#send_irc_message ("end child_handler, pid=$$\n");
 }
 
 sub parse_exp
