@@ -252,6 +252,10 @@ key=delete_notice_summary
 en=Page deletion notification
 fr=Annonce de suppression de page
 
+key=delete_redir
+en=Redirection deletion
+fr=Suppression de redirection
+
 key=revert_notice_summary
 en=bot: notification of revert on
 fr=bot : annonce de révocation sur

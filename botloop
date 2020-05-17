@@ -5,6 +5,8 @@
 echo $$ > .pid
 while true
 do
+  echo starting salebot
   ./salebot2.pl
-  sleep 10
+  echo salebot quit
+  sleep 30
 done

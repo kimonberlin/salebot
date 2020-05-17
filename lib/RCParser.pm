@@ -314,6 +314,7 @@ sub parse_rc_message
         or ( $action eq "inappropriate")
 	or ( $action eq "uninappropriate")
 	or ( $action eq "hit")
+	or ( $action eq "delete_redir")
 	)
     {
         check_fields( \@fields, 10 );

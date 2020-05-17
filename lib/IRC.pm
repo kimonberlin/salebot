@@ -606,8 +606,12 @@ sub child_handler
 
     $g_is_child = 1;
 
+    $log->debug("child_handler: child started");
+    my $start_time = time;
+
     #send_irc_message ("éè begin child_handler, pid=$$, arg0=$text\n");
     sql_init();
+    $log->debug("child_handler: parsing $text");
     my ($rc) = parse_rc_message($text);
 
     # send_irc_message "edit: $text\n" if ($rc->{action} eq "edit");
@@ -616,6 +620,10 @@ sub child_handler
 
     userdb_disconnect();
 
+    #if (time - $start_time >= 10)
+    #{
+        $log->debug("child_handler: child stopping");
+    #}
     #send_irc_message ("end child_handler, pid=$$\n");
 }
 
