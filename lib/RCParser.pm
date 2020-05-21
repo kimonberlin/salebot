@@ -105,6 +105,14 @@ sub parse_rc_message
             $rc->{oldid} = $oldid;
             $rc->{newid} = $newid;
             $rc->{rcid} = $rcid if (defined $rcid);
+
+            # 2020-05-19 attempt to ignore flow
+            if ($diff_url =~ /action=compare-header-revisions/)
+            {
+                $log->debug("Flow: $log_text");
+		$rc->{action} = "ignore";
+		return ($rc);
+            }
         }
         ( $edit_type eq "new" ) and $created_by{$page_name} = $rc->{user};
         /\(\x02?([+-]\d+)\x02?\) \x03\x31\x30/ and $rc->{delta_length} = $1;
