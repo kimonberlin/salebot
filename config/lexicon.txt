@@ -585,6 +585,12 @@ key=thank
 en=thank
 fr=remerciement
 
+key=update
+fr=mise à jour
+
+key=failure
+fr=echec
+
 #key=helpful
 #en=helpful
 #fr=utile
