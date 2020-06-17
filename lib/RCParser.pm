@@ -117,8 +117,9 @@ sub parse_rc_message
         ( $edit_type eq "new" ) and $created_by{$page_name} = $rc->{user};
         /\(\x02?([+-]\d+)\x02?\) \x03\x31\x30/ and $rc->{delta_length} = $1;
         $rc = check_rollback($rc);
-	# TODO: localize this
-	if ($rc->{page_name} =~ /^Sujet:/)
+	# Topic edit using Flow 
+	my $topic = loc("topic");
+	if ($rc->{page_name} =~ /^$topic:/)
 	{
 		$log->debug("Flow: $log_text");
 		# dump_fields(@fields);
@@ -172,7 +173,7 @@ sub parse_rc_message
     }
     if ( $action eq "create2" )
     {
-	# dump_fields(@fields);
+	dump_fields(@fields);
         check_fields( \@fields, 14 );
         $rc->{user} = clean_user( $fields[10] );
         my $new_user = $fields[14];
@@ -180,12 +181,13 @@ sub parse_rc_message
         if ( $new_user =~ /$create2_message/ )
         {
             $new_user = $';
-	    if( $new_user =~ /^(.+?) : / )
+	    if( $new_user =~ /^(.+?) ?: / )
 	    {
 		$new_user = $1;
 		$rc->{edit_summary} = $';
 	    }
             $rc->{new_user} = clean_user($new_user);
+	    $log->debug("create2: new_user=$rc->{new_user}");
         }
     }
     if ( $action eq "delete" )
@@ -247,6 +249,8 @@ sub parse_rc_message
             {
                 $rc->{edit_summary} = $';
             }
+            dump_fields(@fields);
+            $log->debug("parse_rc_message: move from [[$rc->{old_name}]] to [[$rc->{new_name}]]");
         }
         else
         {
@@ -346,7 +350,7 @@ sub dump_fields
         $i++;
     }
     $log->debug("dump_fields: $s");
-    warn("dump_fields: $s"); # TEMPTEMP
+    # warn("dump_fields: $s");
 }
 
 sub dump_actions

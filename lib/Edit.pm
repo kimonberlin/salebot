@@ -316,8 +316,8 @@ sub notify_user
     else
     {
 
-# Mistake edit - get actual mistake and report it
-#$log->debug( "mistake edit, log=" . get_log_section( $rc->{detection_log}, "mistake" ) );    # Test, getting "uninitialized value" errors
+	# Mistake edit - get actual mistake and report it
+	$log->debug( "mistake edit, log=" . get_log_section( $rc->{detection_log}, "mistake" ) );    # Test, getting "uninitialized value" errors
         my $mistake_log = "<pre>\n" . get_log_section( $rc->{detection_log}, "mistake" ) . "\n</pre>\n";
         $banner = "\n== "
           . loc( "revert_title", $page8 ) . " ==\n"

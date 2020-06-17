@@ -801,6 +801,13 @@ sub mark_as_not_recently_deleted
 sub retrieve_page
 {
     my ($page_name) = @_;
+
+    unless (defined ($page_name))
+    {
+	print ("retrieve_page: page_name undefined");
+	return;
+    }
+    $log->debug("retrieve_page: retrieving for $page_name");
     my $page_ref = Table::Page->retrieve( $page_name );
     # Workaround to make retrieve case-sensitive
     if (defined $page_ref)
