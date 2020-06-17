@@ -230,6 +230,7 @@ sub update_user_db
     my ($user) = @_;
 
     return if ( $user eq "" );
+    $log->debug("update_user_db: updating for $user");
 
     if ( !defined($db_user) )
     {

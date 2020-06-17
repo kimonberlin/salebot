@@ -137,18 +137,18 @@ pt=ataque pessoal
 key=user_prefix
 en=User
 fr=Utilisateur
-pt=Usuário
+pt=Usuário(a)
 
 # For the various namespaces, the wording must be exactly what the wiki uses (including upper
 # case for the first letters when appropriate).
 # Eventually, the bot will read this directly from the right Mediawiki: page
 key=user_namespace
 fr=Utilisateur
-pt=Usuário
+pt=Usuário(a)
 
 key=user_talk_namespace
 fr=Discussion utilisateur
-pt=Usuário Discussão
+pt=Usuário(a) Discussão
 
 key=category_namespace
 fr=Catégorie
@@ -228,15 +228,15 @@ pt=para a edição %s de
 
 key=vandalism_banner
 fr=Utilisateur:Salebot/Bandeau vandalisme
-pt=Usuário:Salebot/Aviso vandalismo
+pt=Usuário(a):Salebot/Aviso vandalismo
 
 key=mistake_banner
 fr=Utilisateur:Salebot/Bandeau erreur
-pt=Usuário:Salebot/Aviso erro
+pt=Usuário(a):Salebot/Aviso erro
 
 key=recreate_banner
 fr=Utilisateur:Salebot/Bandeau re-création
-pt=Usuário:Salebot/Aviso recriação
+pt=Usuário(a):Salebot/Aviso recriação
 
 key=delete_banner
 fr=Utilisateur:Salebot/Bandeau suppression
@@ -380,7 +380,7 @@ pt=Página de usuário, novo limiar de vandalismo
 # Note: reason is substed in handle_revert_candidate()
 key=replace_template
 fr={{Suppression Immédiate|reason|~~~}}
-pt={{Usuário:Salebot/Impróprio|~~~~}}
+pt={{Usuário(a):Salebot/Impróprio|~~~~}}
 
 # This message is sent to IRC when the bots reports a new page
 key=new
@@ -402,7 +402,7 @@ fr=création de compte secondaire
 key=create2_message
 en=created new account User:
 fr=(a créé le nouveau compte|created new account) Utilisateur:
-pt=created new account Usuário:
+pt=created new account Usuário(a):
 
 key=event
 en=event
@@ -524,7 +524,7 @@ pt=bloqueou "(.+?)"
 
 key=blocked_user_message
 fr=\[\[\x{03}02Utilisateur:(.+?)\x{03}10\]\]
-pt=\x{03}02Usuário:(.+?)\x{03}10
+pt=\x{03}02Usuário(a):(.+?)\x{03}10
 
 key=move_message
 fr=\[\[\x03\x30\x37Spécial:(Log|Journal)/move\x03\x31\x34\]\]\x03\x34
@@ -547,7 +547,7 @@ pt=\x03\x31\x{30}apagou "(.+)":
 
 key=unblock_user_field
 fr=« Utilisateur:(.+) »
-pt=« Usuário:(.+) »
+pt=« Usuário(a):(.+) »
 
 key=newuser_message
 #fr=\[\[\x03\x30\x{37}Spécial:Log/newusers\x03\x31\x34\]\]\x03\x34
@@ -584,6 +584,11 @@ fr=a remercié
 key=thank
 en=thank
 fr=remerciement
+
+key=topic
+en=Topic
+fr=Sujet
+pt=Tópico
 
 #key=helpful
 #en=helpful
