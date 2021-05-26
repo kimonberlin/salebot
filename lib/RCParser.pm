@@ -333,6 +333,10 @@ sub parse_rc_message
         $rc->{user}      = $fields[10];
         $rc->{action} = "ignore";
     }
+    if ($rc->{user} eq "Flow talk page manager")
+    {
+        $rc->{action} = "ignore";
+    }
     $rc->{edit_summary} = "" unless ( $rc->{edit_summary} );
     return ($rc);
 }
@@ -467,6 +471,11 @@ sub set_revision
 {
     my ($rc) = @_;
 
+    unless (defined($rc->{newid}))
+    {
+        $log->warn("set_revision: no revision");
+	return;
+    }
     Table::Revision->insert(
         {
             revision => $rc->{newid},
